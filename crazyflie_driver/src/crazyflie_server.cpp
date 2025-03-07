@@ -314,7 +314,7 @@ void cmdPositionSetpoint(
       float roll = msg->linear.y + m_roll_trim;
       float pitch = - (msg->linear.x + m_pitch_trim);
       float yawrate = msg->angular.z;
-      uint16_t thrust = std::min<uint16_t>(std::max<float>(msg->linear.z, 0.0), 60000);
+      uint16_t thrust = (uint16_t)(msg->linear.z);
 
       m_cf.sendSetpoint(roll, pitch, yawrate, thrust);
       m_sentSetpoint = true;
