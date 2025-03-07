@@ -1,6 +1,7 @@
 [submodule "crazyflie_cpp"]
 	path = crazyflie_cpp
 	url = https://github.com/spencerfolk/crazyflie_cpp.git
+	branch = toc_fix
 [submodule "crazyflie_tools"]
 	path = crazyflie_tools
 	url = https://github.com/spencerfolk/crazyflie_tools
